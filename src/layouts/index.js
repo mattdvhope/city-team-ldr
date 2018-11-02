@@ -6,7 +6,6 @@ import styled from "styled-components";
 
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
-import 'mdbreact/dist/css/mdb.css';
 
 const FontStyler = styled.div`
   font-family:'Neue Frutiger W31 Trad Light', Trirong;

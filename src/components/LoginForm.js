@@ -1,36 +1,25 @@
 import React, { Component } from "react"
 import { withRouter } from "react-router-dom"
-// import { Container, Row, Col, Input, Button } from 'mdbreact';
 
 export default class LoginForm extends Component {
   constructor(props) {
     super(props)
     this.state = {
       window: undefined,
-      mdbreact: undefined
     }
   }
 
   componentDidMount() {
     this.setState({ window: window });
-    try {
-      const mdbreact = require("mdbreact");
-      this.setState({ mdbreact: mdbreact });
-    } catch (e) {
-      console.error(e);
-    }
   }
 
   render() {
 
     if (this.state.window) {
-
-      const { Container, Row, Col, Input, Button } = this.state.mdbreact;
-
       return (
 
-        <Container>
-          <Row>
+        <div className="container">
+          <div className="row">
             <Col md="6">
 
               <form
@@ -47,23 +36,24 @@ export default class LoginForm extends Component {
                 <input type="hidden" name="utf8" value="✓" />
 
                 <div className={this.props.emailGroupClass}>
-                  <Input
+                  <label htmlFor="email">Type your email</label>
+                  <input
                     id="formControlsEmail"
-                    label="Type your email"
-                    type="text"
+                    type="email"
                     name="email"
                     className="form-control"
                     placeholder="Email address"
                     onChange={this.props.handleUpdate}
                     value={this.props.emailValue}
+                    autoFocus
                   />
                   <span className="help-block">{this.props.emailMessage}</span>
                 </div>
 
                 <div className={this.props.passwordGroupClass}>
-                  <Input
+                  <label htmlFor="password">Type your password</label>
+                  <input
                     id="formControlsPassword"
-                    label="Type your password"
                     type="password"
                     name="password"
                     className="form-control"
@@ -74,13 +64,13 @@ export default class LoginForm extends Component {
                   <span className="help-block">{this.props.passwordMessage}</span>
                 </div>
 
-                <Button type="submit">Submit</Button>
+                <button className="btn btn-success" type="submit">Submit</button>
 
               </form>
 
             </Col>
-          </Row>
-        </Container>
+          </div>
+        </div>
       )
     } else {
       return <span />
