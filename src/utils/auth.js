@@ -17,6 +17,7 @@ export const handleLogin = ({ first_name, last_name, email }) => {
   })
 }
 
+
 export const isLoggedIn = () => {
   if (!isBrowser) return false
 
