@@ -1,0 +1,21 @@
+div > div > div > div > ol.carousel-indicators > li {
+  height: 23px;
+  width: 23px;
+  margin-right: 9px;
+  margin-left: 9px;
+}
+
+div > div > div > div > ol.carousel-indicators > li.active {
+  height: 23px;
+  width: 23px;
+  margin-right: 9px;
+  margin-left: 9px;
+}
+
+div > div > div > div > div.carousel-item {
+  opacity: 0;
+  transition-duration: 1.5s !important;
+  transition-property: opacity;
+}
+
+

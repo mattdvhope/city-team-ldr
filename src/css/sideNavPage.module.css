@@ -1,0 +1,13 @@
+.thaiFlag {
+  cursor: pointer;
+  margin-left: -120%;
+  width: 170%;
+  border-radius: 50%
+}
+
+.usaFlag {
+  cursor: pointer;
+  margin-right: -150%;
+  width: 170%;
+  border-radius: 50%
+}

@@ -1,0 +1,13 @@
+.avatarHolder {
+
+  text-align: center;
+  margin-left: 0px;
+
+  @media (min-width: 767px) {
+    margin-left: 0px;
+  }
+  @media (max-width: 767px) {
+    margin-left: 50px;
+    margin-bottom: 17px;
+  }
+}

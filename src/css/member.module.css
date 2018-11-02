@@ -1,0 +1,63 @@
+.firstAvatar {
+  height: auto;
+  border-radius: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1087px) {
+    margin-top: 2%;
+  }
+  @media (max-width: 1087px) {
+    margin-top: 9%;
+  }
+
+  @media (min-width: 767px) {
+    max-width: 95%;
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    margin-top: 0%;
+    max-width: 55%;
+  }
+  @media (max-width: 667px) {
+    margin-top: 0%;
+    max-width: 60%;
+  }
+  @media (max-width: 500px) {
+    margin-top: 0%;
+    max-width: 70%;
+  }
+}
+
+.avatar {
+  height: auto;
+  border-radius: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1087px) {
+    margin-top: 7%;
+  }
+  @media (max-width: 1087px) {
+    margin-top: 30%;
+  }
+
+  @media (min-width: 767px) {
+    max-width: 95%;
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    margin-top: 0%;
+    max-width: 55%;
+  }
+  @media (max-width: 667px) {
+    margin-top: 0%;
+    max-width: 60%;
+  }
+  @media (max-width: 500px) {
+    margin-top: 0%;
+    max-width: 70%;
+  }
+}
