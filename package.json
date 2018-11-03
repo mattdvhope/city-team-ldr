@@ -2,7 +2,7 @@
   "name": "gatsby-starter-default",
   "description": "Gatsby default starter",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Matt",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
     "@fortawesome/free-solid-svg-icons": "^5.3.1",
@@ -21,6 +21,7 @@
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "gatsby-transformer-sharp": "^1.6.27",
+    "mdbreact": "git+https://oauth2:3BwqJuHiBc8xkzXuxkRz@git.mdbootstrap.com/mdb/react/re-pro.git",
     "react-bootstrap": "^0.32.1",
     "react-helmet": "^5.2.0",
     "react-router-bootstrap": "^0.24.4",
