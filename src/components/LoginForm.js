@@ -1,27 +1,35 @@
 import React, { Component } from "react"
 import { withRouter } from "react-router-dom"
+import { Grid, Row, Col, Button, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 
 export default class LoginForm extends Component {
   constructor(props) {
     super(props)
     this.state = {
       window: undefined,
+      mdbreact: undefined
     }
   }
 
   componentDidMount() {
     this.setState({ window: window });
+    try {
+      const mdbreact = require("mdbreact");
+      this.setState({ mdbreact: mdbreact });
+    } catch (e) {
+      console.error(e);
+    }
   }
 
   render() {
 
     if (this.state.window) {
+
       return (
 
-        <div className="container">
-          <div className="row">
-            <Col md="6">
-
+        <Grid>
+          <Row>
+            <Col md={4}>
               <form
                 className="form-signin"
                 method="post"
@@ -39,13 +47,12 @@ export default class LoginForm extends Component {
                   <label htmlFor="email">Type your email</label>
                   <input
                     id="formControlsEmail"
-                    type="email"
+                    type="text"
                     name="email"
                     className="form-control"
                     placeholder="Email address"
                     onChange={this.props.handleUpdate}
                     value={this.props.emailValue}
-                    autoFocus
                   />
                   <span className="help-block">{this.props.emailMessage}</span>
                 </div>
@@ -64,13 +71,13 @@ export default class LoginForm extends Component {
                   <span className="help-block">{this.props.passwordMessage}</span>
                 </div>
 
-                <button className="btn btn-success" type="submit">Submit</button>
+                <Button type="submit">Submit</Button>
 
               </form>
 
             </Col>
-          </div>
-        </div>
+          </Row>
+        </Grid>
       )
     } else {
       return <span />

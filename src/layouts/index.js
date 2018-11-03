@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import styled from "styled-components";
 
 import 'font-awesome/css/font-awesome.min.css';
-import 'bootstrap-css-only/css/bootstrap.min.css'; 
 
 const FontStyler = styled.div`
   font-family:'Neue Frutiger W31 Trad Light', Trirong;
@@ -53,6 +52,8 @@ export default class Layout extends Component {
         <Helmet title={data.site.siteMetadata.title} >
 
           <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/50070ebd-d81b-4d29-acc0-f8abd9040636.css"/>
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 
           <link href="https://fonts.googleapis.com/css?family=Athiti|Chonburi|Kanit|Maitree|Prompt|Sriracha|Taviraj|Trirong|Josefin+Sans" rel="stylesheet" />
         </Helmet>
